@@ -2,9 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sales</title>
+    <title>Sales | Salmon Cookies</title>
+    <script src="./app.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Data Input</legend>
+        <label for="location">Location</label>
+        <input name="location" type="text" id="location" />
+
+        <br />
+
+        <label for="minCust">Minimum Customers</label>
+        <input name="minCust" type="number" id="minCust" />
+
+        <br />
+        <label for="maxCust">Maximum Customers</label>
+        <input name="maxCust" type="number" id="maxCust" />
+
+        <br />
+        <label for="avgCookiesPerCust">Average Cookies Sold Per Customer</label>
+        <input name="avgCookiesPerCust" type="number" id="avgCookiesPerCust" />
+
+        <br />
+        <button>Submit</button>
+      </fieldset>
+    </form>
+    <table id="salesData"></table>
+  </body>
 </html>
